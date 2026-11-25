@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Join the closed tests for Grid Riders, Turbo Sunset and Mach Blaze live wallpapers by Moskwen Labs.">
+<meta property="og:title" content="Test 3 retro live wallpapers · Moskwen Labs">
+<meta property="og:description" content="Join the group, become a tester, keep the apps 14 days.">
+<title>Moskwen Labs · Testers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: single narrow column, a synthwave horizon band on top, three numbered steps (it is a real sequence) */
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#120a24; --panel:#1c1236; --line:#3a2a63; --fg:#f2ecff; --muted:#b6a8d9;
+  --sun:#ff9a3c; --pink:#ff3d9a; --cyan:#3de0ff;
+  --display:"Orbitron","Trebuchet MS",sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+.hero{margin-top:calc(-1 * env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);position:relative;overflow:hidden;
+  background:linear-gradient(180deg,#2a0f4a 0%,#5b1a6b 55%,#ff3d9a 78%,#ff9a3c 100%);}
+.hero .inner{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 120px;position:relative;z-index:2}
+.sun{position:absolute;left:50%;bottom:-70px;width:220px;height:220px;transform:translateX(-50%);border-radius:50%;
+  background:repeating-linear-gradient(180deg,#ffd36b 0 14px,transparent 14px 20px),linear-gradient(#ffd36b,#ff5f8f);
+  -webkit-mask:linear-gradient(#000 0 45%,transparent 45% 50%,#000 50% 62%,transparent 62% 66%,#000 66% 76%,transparent 76% 80%,#000 80%);
+          mask:linear-gradient(#000 0 45%,transparent 45% 50%,#000 50% 62%,transparent 62% 66%,#000 66% 76%,transparent 76% 80%,#000 80%);z-index:1}
+.grid{position:absolute;left:0;right:0;bottom:0;height:60px;z-index:1;
+  background:linear-gradient(transparent 0,var(--bg) 100%),repeating-linear-gradient(90deg,rgba(61,224,255,.55) 0 1px,transparent 1px 48px);}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#ffd9ef}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(26px,6.5vw,40px);line-height:1.1;margin:10px 0 12px;text-wrap:balance}
+.lead{max-width:52ch;margin:0;color:#ffe9f5}
+.steps{display:flex;flex-direction:column;gap:20px;margin-top:28px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.step h2{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:600;font-size:17px;margin:0 0 8px}
+.num{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;background:var(--pink);color:#fff}
+.step p{margin:0 0 14px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 18px;border-radius:10px;
+  font-weight:600;text-decoration:none;color:#120a24;background:var(--cyan)}
+.btn:focus-visible,.app a:focus-visible,.copy:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.apps{display:flex;flex-direction:column;gap:12px}
+.app{display:flex;align-items:center;gap:14px;padding:12px;border-radius:12px;border:1px solid var(--line);background:#160e2c;flex-wrap:wrap}
+.swatch{flex:none;width:44px;height:44px;border-radius:10px}
+.gr{background:linear-gradient(180deg,#1b0b3a,#7a1fa2 60%,#3de0ff)}
+.ts{background:linear-gradient(180deg,#3a0d5c,#ff3d9a 60%,#ff9a3c)}
+.mb{background:linear-gradient(180deg,#0b1d3a,#ff5a1f 60%,#ffd36b)}
+.app .name{flex:1;min-width:0}
+.app .name strong{display:block}
+.app .name span{font-family:var(--mono);font-size:12px;color:var(--muted);word-break:break-all}
+.app a{flex:none;min-height:42px;display:inline-flex;align-items:center;padding:8px 14px;border-radius:9px;font-weight:600;text-decoration:none;background:var(--pink);color:#fff}
+.mono{font-family:var(--mono);font-size:14px;background:#160e2c;border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.mono code{word-break:break-all}
+.copy{font:inherit;font-size:12px;border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:6px;padding:4px 10px;cursor:pointer}
+.note{margin-top:24px;padding:16px;border-radius:12px;border:1px dashed var(--line);color:var(--muted);font-size:14px}
+.note strong{color:var(--fg)}
+footer{margin-top:28px;font-size:13px;color:var(--muted);text-align:center}
+@media (max-width:420px){.app a{width:100%;justify-content:center}}
+@media (prefers-reduced-motion:no-preference){.sun{animation:glow 6s ease-in-out infinite alternate}@keyframes glow{to{filter:brightness(1.15)}}}
+
+body{margin:0}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <div class="eyebrow">Moskwen Labs · closed test</div>
+    <h1>Test 3 retro live wallpapers</h1>
+    <p class="lead">Thanks for helping! It takes about 2 minutes. Please keep the apps installed for 14 days so Google counts you as a tester.</p>
+  </div>
+  <div class="sun" aria-hidden="true"></div>
+  <div class="grid" aria-hidden="true"></div>
+</header>
+
+<main class="wrap">
+  <div class="steps">
+    <section class="step">
+      <h2><span class="num">1</span>Join the testers group</h2>
+      <p>Open the group and tap <strong>Join group</strong>. Use the same Google account as the Play Store on your phone.</p>
+      <div class="mono"><code id="grp">get-12-testers@googlegroups.com</code><button class="copy" id="copyGrp" type="button">Copy</button></div>
+      <a class="btn" href="https://groups.google.com/g/get-12-testers" target="_blank" rel="noopener">Join the Google Group</a>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">2</span>Become a tester</h2>
+      <p>On each page tap <strong>Become a tester</strong>, then <strong>Download it on Google Play</strong>.</p>
+      <div class="apps">
+        <div class="app"><div class="swatch gr" aria-hidden="true"></div><div class="name"><strong>Grid Riders</strong><span>com.moskwen.gridriders</span></div><a href="https://play.google.com/apps/testing/com.moskwen.gridriders" target="_blank" rel="noopener">Join test</a></div>
+        <div class="app"><div class="swatch ts" aria-hidden="true"></div><div class="name"><strong>Turbo Sunset</strong><span>com.moskwen.turbosunset</span></div><a href="https://play.google.com/apps/testing/com.moskwen.turbosunset" target="_blank" rel="noopener">Join test</a></div>
+        <div class="app"><div class="swatch mb" aria-hidden="true"></div><div class="name"><strong>Mach Blaze</strong><span>com.moskwen.machblaze</span></div><a href="https://play.google.com/apps/testing/com.moskwen.machblaze" target="_blank" rel="noopener">Join test</a></div>
+      </div>
+    </section>
+
+    <section class="step">
+      <h2><span class="num">3</span>Set it and keep it</h2>
+      <p style="margin:0">Open each app, tap <strong>Set wallpaper</strong> for home or lock screen, and keep the apps installed for 14 days. Opening them now and then helps a lot.</p>
+    </section>
+  </div>
+
+  <div class="note"><strong>"App not available"?</strong> Make sure you joined the group with the same Google account as your Play Store, then wait a few minutes and open the link again.</div>
+
+  <footer>Want a test swap? Send me your link on Telegram and I'll test your app too.</footer>
+</main>
+
+<script>
+document.getElementById('copyGrp').addEventListener('click',function(){
+  var b=this,t=document.getElementById('grp').textContent;
+  function done(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1500)}
+  try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+  function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById('grp'));var s=getSelection();s.removeAllRanges();s.addRange(r)}
+});
+</script>
+
+</body>
+</html>
